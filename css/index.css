@@ -1,5 +1,4 @@
 
-
 html,
 body {
     font-size: 12px;
@@ -17,72 +16,69 @@ body {
 
 }
 
-h2{
-    color: #f7ae3b;
-}
-
-h4{
-    color: #f2612d;
-}
-
-.about{
-    background-color: #128373;
-}
-
-.about__content{
-    margin:  101px;
-    
-}
-.about__title{
-    width: 976px;
-    height: 047px;
-    color: #ffffff;
-    
-}
-.about__inner{
-    margin: 101px;
-}
-.about__item{
-    color: #ffffff;
-    font-style:normal;
-}
-.about_text--bolder{
-    font-weight: bolder;
-}
-
-.blog__text-title{
-    color: #f2612d;
-}
-
-/* .about__title {
-    
-} */
-
 .header__top-inner {
+    padding-bottom: 70px;
+    height: 100%;
+} 
+
+.header__burgher-btn {
+    display: none;
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99999999;
+}
+
+.header__burgher-btn-icon{
+    width: 100%;
+    
+}
+
+.header__navigation{
     display: flex;
     justify-content: space-between;
-    padding bottom: 70px;
-    width: 100;
-   
+    padding: 90px 0 110px;
+    border: 1px solid;
+    
 }
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.header__btn-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: -27px;
+    
+}
+button {
+    background-color: transparent;
+    border:none;
+    
+}
+
 .header__icon{
     border: 1px solid red;
     color: red;
 }
+
 .menu__list{
     list-style: none;
     display:flex;
     align-items:center;
     letter-spacing: 0px;
-    line-height: 40px;
 }
+
 .menu {
     border: 1px solid red;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:flex-start;
-    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    
 }
 
 .menu__item{
@@ -95,8 +91,8 @@ h4{
 
 .container__details{
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
 }
 
 .personal{
@@ -117,6 +113,23 @@ h4{
     margin-left: 35px;
 }
 
+.logo {
+    width: 211px;
+    height: 72px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.btn--green-bg{
+    background-color:#0aa566;
+    border-radius:35px;
+    width: 223px;
+    height: 71px;
+    
+}
 .social__list{
     border: 1px solid red;
     list-style: none;
@@ -132,31 +145,7 @@ h4{
 .social__icon{
     margin-left: 35px;
 }
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 211px;
-    height: 72px;
-}
-.header-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-.header__btn-wrapper{
-    display: flex;
-    justify-content: center;
-    
-}
-.btn--green-bg{
-    background-color:#0aa566;
-    border-radius:35px;
-    width: 223px;
-    height: 71px;
-    
-}
+
 .smoothies{
     display: flex;
     align-items: center;
@@ -177,25 +166,61 @@ h4{
 .smoothies__features{
     max-width: 960px;
     max-height: 380px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
- 
 }
+
+h2{
+    color: #f7ae3b;
+}
+
+h4{
+    color: #f2612d;
+}
+
+.blog__text-title{
+    color: #f2612d;
+}
+
+.about__content{
+    margin:  101px;
+    
+}
+.about__title{
+    width: 976px;
+    height: 047px;
+    color: #ffffff;
+}   
+
+
+.about__inner{
+    margin: 101px;
+}
+
+.about__item{
+    color: #ffffff;
+    font-style:normal;
+}
+
+.about_text--bolder{
+    font-weight: bolder;
+}
+
 .about{
     display: flex;
     flex-direction: row;
     align-items:flex-start;
     justify-content: space-around;
+    background-color: #128373;
 }
 
-.about__content{
-    max-width: ;widthh
-}
+
 .about__list{
     list-style: none;
     height: 380px;;
 }
+
 .about__btn-green{
     margin: 96px;
     height: 60px;
@@ -211,20 +236,89 @@ h4{
     justify-content: space-around;
     align-content: stretch;
 }
-.products__item-chocolate{
-    background-color: #662f14;
-}
-.products__item-lettuce{
-    background-color: #158775;
-}
-.products__item-ginger{
-    background-color:#fbb040;
-}
-.products__item-turmeric{
-    background-color: #c24b18;
+
+.products__item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
 }
 
+.products__item--chocolate{
+    background-color: #662f14;
+}
+.products__item--lettuce{
+    background-color: #158775;
+}
+.products__item--ginger{
+    background-color:#fbb040;
+}
+.products__item--turmeric{
+    background-color: #c24b18;
+}
+.story{
+    display:flex;
+    width: 100vw;
+}
+.story__inner{
+    border:10px solid black;
+    width: 50%;
+}
+.story__title{
+    padding-top: 200px;
+    padding-left:300px;
+    font-size: 30px;
+    text-align: start;
+}
+.story__text{
+    padding-left: 300px;
+    width: 700px;
+    text-align: start;
+    font-size: 20px;
+}
+.story__btn-wrapper{
+    width: 302px;
+    height: 60px;
+    border:2px solid black;
+    padding-left: 300px;
+}
+.story__btn-green{
+    padding-left: 300px;
+    padding-top:40px;
+    background-color: #158775;
+    border:1px solid;
+    width: 302px;
+    height: 60px;
+    padding-left: 300px;
+    border-radius: 35px;
+}
+.blog{
+    display:flex;
+}
+.instagram__inner{
+    display:flex;
+
+}
+.footer__inner{
+    display:flex;
+    align-items:flex-start;
+}
 
 .footer{
     background-color: #fab03e;
 }
+
+@media (max-width: 1150px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .header__burgher-btn {
+        display: block;
+    }
+    .header__content {
+        padding-top:200px;
+    }
+}
+

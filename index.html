@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./assets/images/">
     <link rel="stylesheet" href="./assets/fonts/">
+    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 
@@ -17,10 +18,12 @@
     <!-- Здесь будет структура документа -->
     <header class="header">
         <div class="header__img">
-        <div class="header-top">
-
-            <div class="header__top-inner"> 
-                <nav class="menu">
+        <div class="header__top-inner"> 
+                <button class="header__burgher-btn">
+                    <img class="header__burgher-btn-icon" src="assets/images/icon-burgher.svg" alt="menu-icon">
+                </button>
+                <div class= "header__navigation">
+                    <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="">Shop</a>
@@ -41,55 +44,54 @@
                             <a class="menu__link" href="">Testimonials</a>
                         </li>
                     </ul> 
-                </nav>
-                <div class="logo">
-                    <a class="logo__link" href=""></a>
-                    <img class="logo__img" src="assets/images/Logo.png" alt="">
-                    </a>
+                    </nav>
+                    <div class="container__details">
+                    <div class="personal">
+                        <ul class="personal__list">
+                            <li class="personal__list-item">
+                                <a class="personal__link" href="">
+                                    <img class="personal__icon-search" src="assets/images/Search-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="persoanl__list-item">
+                                <a class="perosnal__link" href="">
+                                    <img class="personal__icon-search" src="assets/images/User-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="persoanl__list-item">
+                                <a class="perosnal__link" href="">
+                                    <img class="personal__icon-search" src="assets/images/Cart-icon.png" alt="">
+                                <span class="persoanl__cart-count">5</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="header__icon" src="assets/images/Line.png" alt="">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__list-item">
+                                <a class="social__link" href="">
+                                    <img class="social__icon" src="assets/images/Facebook-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li  class="social__list-item">
+                                <a class="social__link" href="">
+                                    <img  class="social__icon" src="assets/images/Pinterest-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li  class="social__list-item">
+                                <a class="social__link" href="">
+                                    <img class="social__icon" src="assets/images/Instagram-icon.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            <div class="container__details">
-            <div class="personal">
-                <ul class="personal__list">
-                    <li class="personal__list-item">
-                        <a class="personal__link" href="">
-                            <img class="personal__icon-search" src="assets/images/Search-icon.png" alt="">
-                        </a>
-                    </li>
-                    <li class="persoanl__list-item">
-                        <a class="perosnal__link" href="">
-                            <img class="personal__icon-search" src="assets/images/User-icon.png" alt="">
-                        </a>
-                    </li>
-                    <li class="persoanl__list-item">
-                        <a class="perosnal__link" href="">
-                            <img class="personal__icon-search" src="assets/images/Cart-icon.png" alt="">
-                        <span class="persoanl__cart-count">5</span>
-                    </a>
-                    </li>
-                </ul>
             </div>
-            <img class="header__icon" src="assets/images/Line.png" alt="">
-            <div class="social">
-                <ul class="social__list">
-                    <li class="social__list-item">
-                        <a class="social__link" href="">
-                            <img class="social__icon" src="assets/images/Facebook-icon.png" alt="">
-                        </a>
-                    </li>
-                    <li  class="social__list-item">
-                        <a class="social__link" href="">
-                            <img  class="social__icon" src="assets/images/Pinterest-icon.png" alt="">
-                        </a>
-                    </li>
-                    <li  class="social__list-item">
-                        <a class="social__link" href="">
-                            <img class="social__icon" src="assets/images/Instagram-icon.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
+                <div class="logo">
+                    <a class="logo__link" href=""><img class="logo__img" src="assets/images/Logo.png" alt="logo"></a>
+                    
+                </div>
             <div class="header__content">
                 <div class="header__content-inner">
                     <div class="header__btn-wrapper">
@@ -163,14 +165,12 @@
         </div>
     </section>
     <section class="products">
-        <div class="products__inner">
-            <div class="products__item-chocolate">
+            <div class="products__item products__item--chocolate">
                 <img class="products__img" src="assets/images/dark-chocolate-smooth.png" alt="">
                 <h3 class="products__title">Dark Chocolate Smoothie</h3>
                 <span class="products__sub-title">100ml</span><br>
                 <button class="btn btn--white">Buy  <img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
             </div>
-        </div>
         <div class="products__item-lettuce">
                 <img class="product__img" src="assets/images/vegan-lettuce-smooth.png" alt="">
                 <h3 class="products_title">Veggan Lettuce Smoothie</h3>
@@ -195,11 +195,13 @@
         <div class="story__inner">
             <h2 class="story__title">Our story</h2>
             <p class="story__text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake. </p>
-            <button class="story__btn-green">Who we are  <img class="story__icon" src="assets/images/Arrow.png" alt=""></button>
-        </div>
+            <div class="story__btn-wrapper"> <button class="story__btn-green">Who we are  <img class="story__icon" src="assets/images/Arrow.png" alt=""></button>
+            </div>
+    </div>
         <div class="story__img">
         <img class="story__icon" src="assets/images/Img-story.png" alt="">
         </div>
+    
     </section>
     <section class="testimonials"> 
         <div class="testimonials__inner">
@@ -261,8 +263,8 @@
         <div class="footer__inner">
 
             <div class="logo">
-                <a class="logo__link" href=""></a>
-                <img class="logo__img" src="assets/images/Logo.png" alt="">
+                <a class="logo__link" href="">
+                    <img class="logo__img" src="assets/images/Logo.png" alt="logo">
                 </a>
             </div>
             <div class="footer__features">
