@@ -8,9 +8,9 @@
     <!-- Сюда подключаем стили -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="./assets/images/">
-    <link rel="stylesheet" href="./assets/fonts/">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/images/">
+    <link rel="stylesheet" href="assets/fonts/">
+    <link rel="stylesheet" href="libraries/WOW-master/css/libs/animate.css">
     <title>Document</title>
 </head>
 
@@ -95,7 +95,7 @@
             <div class="header__content">
                 <div class="header__content-inner">
                     <div class="header__btn-wrapper">
-                        <button class="btn btn--green-bg">Shop now
+                        <button class="btn btn--green-bg wow swing">Shop now
                             <img class="arrow--yellow" src="assets/images/arow.png" alt="">
                         </button>
                     </div>
@@ -168,26 +168,26 @@
             <div class="products__item products__item--chocolate">
                 <img class="products__img" src="assets/images/dark-chocolate-smooth.png" alt="">
                 <h3 class="products__title">Dark Chocolate Smoothie</h3>
-                <span class="products__sub-title">100ml</span><br>
-                <button class="btn btn--white">Buy  <img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
+                <span class="product__sub--title">100ml</span><br>
+                <button class="products__btn products__btn--chocolate">Buy  <img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
             </div>
-        <div class="products__item-lettuce">
+        <div class="products__item products__item--lettuce">
                 <img class="product__img" src="assets/images/vegan-lettuce-smooth.png" alt="">
-                <h3 class="products_title">Veggan Lettuce Smoothie</h3>
-                <span class="product__sub-title">100ml</span><br>
-                <button class="product__btn">Buy<img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
+                <h3 class="products__title">Veggan Lettuce Smoothie</h3>
+                <span class=" product__sub--title">100ml</span><br>
+                <button class="products__btn products__btn--lettuce">Buy<img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
                 </div>
-            <div class="products__item-ginger">
+            <div class="products__item products__item--ginger">
                 <img class="product__img" src="assets/images/lemon-ginger-smooth.png" alt="">
                 <h3 class="products__title">Lemon Ginger Smoothie</h3>
-                <span class="product__sub-title">100ml</span><br>
-                <button class="products__btn-yellow">Buy <img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
+                <span class=" product__sub--title">100ml</span><br>
+                <button class="products__btn products__btn--ginger">Buy <img class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
             </div>
-            <div class="products__item-turmeric">
+            <div class="products__item products__item--turmeric">
                 <img class="product__img" src="assets/images/turmeric-garlic-smooth.png" alt="">
                 <h3 class="products__title">Turmeric Garlic Smoothie</h3>
-                <span class="product__sub-title">100ml</span><br>
-                <button class="products__btn-orange">Buy  <img  class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
+                <span class="product__sub--title">100ml</span><br>
+                <button class="products__btn products__btn--turmeric">Buy  <img  class="btn__icon--white" src="assets/images/Arrow-white.png" alt=""></button>
             </div>
         
     </section>
@@ -315,6 +315,11 @@
             <span  class="footer__icon">Go top</span>
         <button class="footer__btn-white"><img src="assets/images/Icon-arrow-up.png" alt=""></button>
     </section>
+
+    <script type="text/javascript" src="libraries/WOW-master/dist/wow.min.js" ></script>
+    <script>
+        new WOW().init();
+        </script>
 </body>
 </html>
 

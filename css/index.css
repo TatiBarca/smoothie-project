@@ -145,11 +145,33 @@ button {
 .social__icon{
     margin-left: 35px;
 }
-
+p{
+    line-height: 20px;
+    padding-top: 50px;
+}
+h2{
+    padding-top: 90px;
+}
 .smoothies{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 862px;
+}
+.smoothies__features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1010px;
+    height: 395px;
+    padding-top: 65px;
+}
+.smoothies__icon{
+    padding-bottom: 10px;
+}
+.smoothies__name{
+    width: 25%;
+    height: 180px;
 }
 .smoothies__inner{
     text-align: center;
@@ -235,6 +257,7 @@ h4{
     align-items:flex-start;
     justify-content: space-around;
     align-content: stretch;
+    
 }
 
 .products__item {
@@ -257,6 +280,32 @@ h4{
 .products__item--turmeric{
     background-color: #c24b18;
 }
+
+.products__title{
+    padding-top:15px;
+    color:white;
+    font-size: 18px;
+}
+.product__sub--title{
+    color:white;
+    padding-bottom: 30px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+
+.products__btn{
+    border:1px solid white;
+    border-radius: 30px;
+    height: 60px;
+    width: 202px;
+    bottom: 77px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .story{
     display:flex;
     width: 100vw;
@@ -298,6 +347,7 @@ h4{
 }
 .instagram__inner{
     display:flex;
+    flex: 0 1 20%;
 
 }
 .footer__inner{
@@ -307,6 +357,7 @@ h4{
 
 .footer{
     background-color: #fab03e;
+    border:1px solid;
 }
 
 @media (max-width: 1150px) {
