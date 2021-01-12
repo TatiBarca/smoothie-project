@@ -16,6 +16,15 @@ body {
 
 }
 
+
+.test{
+    background-image: url(../assets/images/header-img.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+} 
+
 .header__top-inner {
     padding-bottom: 70px;
     height: 100%;
