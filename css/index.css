@@ -8,11 +8,6 @@ body {
     
 }
 
-.test{
-    background-image: url(../assets/images/header-img.png);
-    background-position: center;
-}
-
 .header__img{
     background-image: url(../assets/images/header-img.png);
     background-position: center;
