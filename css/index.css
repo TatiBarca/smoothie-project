@@ -17,14 +17,7 @@ body {
 }
 
 
-.test{
-    background-image: url(../assets/images/header-img.png);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-
-} 
-
+  
 .header__top-inner {
     padding-bottom: 70px;
     height: 100%;
@@ -351,22 +344,46 @@ h4{
     padding-left: 300px;
     border-radius: 35px;
 }
+
+.testimonials{
+    height: 720px;
+}
+
 .blog{
     display:flex;
 }
 .instagram__inner{
     display:flex;
-    flex: 0 1 20%;
-
+    
 }
+
+.instagram__social-img{
+    flex: 0 1 20%;
+}
+
+.instagram__img{
+    width: 100%;
+}
+
 .footer__inner{
     display:flex;
     align-items:flex-start;
+    
+    height: 372px;
 }
 
 .footer{
     background-color: #fab03e;
     border:1px solid;
+    
+    
+}
+
+.footer__holder{
+    width: 1920px;
+    height: 60px;
+    
+    
 }
 
 @media (max-width: 1150px) {
