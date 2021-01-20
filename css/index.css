@@ -1,5 +1,10 @@
 
 html,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-size: 12px;
     font-family: "Muli", sans-serif;
@@ -7,6 +12,7 @@ body {
     text-align: left;
     
 }
+
 
 .header__img{
     background-image: url(../assets/images/header-img.png);
@@ -17,10 +23,10 @@ body {
 }
 
 
-  
 .header__top-inner {
     padding-bottom: 70px;
     height: 100%;
+    border:1px solid;
 } 
 
 .header__burgher-btn {
@@ -30,6 +36,7 @@ body {
     top: 20px;
     right: 20px;
     z-index: 99999999;
+    border:solid 1px;
 }
 
 .header__burgher-btn-icon{
@@ -48,6 +55,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border:solid 1px;
     
 }
 
@@ -55,6 +63,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: -27px;
+    border:solid 1px;
     
 }
 button {
@@ -122,6 +131,7 @@ button {
     top: 70px;
     left: 50%;
     transform: translateX(-50%);
+    border:solid 1px;
     
 }
 
@@ -159,6 +169,7 @@ h2{
     align-items: center;
     flex-direction: column;
     height: 862px;
+    border:solid 1px;
 }
 .smoothies__features{
     display: flex;
@@ -186,6 +197,7 @@ h2{
     justify-content: center;
     align-items:center;
     max-width: 920px;
+    border:solid 1px;
 }
 .smoothies__features{
     max-width: 960px;
@@ -193,6 +205,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border:solid 1px;
 }
 
 h2{
@@ -207,21 +220,31 @@ h4{
     color: #f2612d;
 }
 
+.about{
+    display: flex;
+    justify-content: space-around;
+    background-color: #128373;
+    border:solid 1px;
+}
+
 .about__content{
     margin:  101px;
+    border:solid 1px;
+    
     
 }
 .about__title{
     width: 976px;
-    height: 047px;
+    height: 47px;
     color: #ffffff;
+    border:solid 1px;
 }   
-
 
 .about__inner{
     margin: 101px;
+    border:solid 1px;
+    
 }
-
 .about__item{
     color: #ffffff;
     font-style:normal;
@@ -230,19 +253,10 @@ h4{
 .about_text--bolder{
     font-weight: bolder;
 }
-
-.about{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-around;
-    background-color: #128373;
-}
-
-
 .about__list{
     list-style: none;
-    height: 380px;;
+    height: 380px;
+    border:solid 1px;
 }
 
 .about__btn-green{
@@ -251,7 +265,9 @@ h4{
     background-color: #128373;
     border-radius: 35px;
     width: 334px;
-    height: 59px;
+    
+    border:solid 1px;
+    width: 310px;
 }
 .products{
     display: flex;
