@@ -204,7 +204,7 @@ button {
 }
 p{
     line-height: 20px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 h2{
     padding-top: 90px;
@@ -216,14 +216,18 @@ h2{
     height: 862px;
     border:solid 1px;
 }
-.smoothies__features{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1010px;
-    height: 395px;
-    padding-top: 65px;
+
+.smoothies__tittle{
+    font-size: 50px;
+    line-height: 0.8;
 }
+
+.smoothies__description{
+    text-align: center;
+    line-height: 1.94;
+}
+
+
 .smoothies__icon{
     padding-bottom: 10px;
 }
@@ -234,7 +238,7 @@ h2{
 .smoothies__inner{
     text-align: center;
     font-weight: normal;
-    font-family: Perpetua;
+    font-family:Muli-Regular;
     font-size: 18px;
     max-width: 920px;
     display: flex;
@@ -243,6 +247,7 @@ h2{
     align-items:center;
     max-width: 920px;
     border:solid 1px;
+    margin-bottom: 65px;
 }
 .smoothies__features{
     max-width: 960px;
@@ -251,6 +256,13 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     border:solid 1px;
+    width: 1010px;
+    height: 395px;
+    
+}
+
+.smoothies__sub-title{
+    font-size: 20px;
 }
 
 h2{
