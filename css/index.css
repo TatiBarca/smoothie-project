@@ -1,4 +1,38 @@
 
+@font-face {
+    font-family: "MuliRegular";
+    src: url("/assets/fonts/Muli-Regular.woff");
+}
+
+@font-face {
+    font-family: "MuliBold";
+    src: url("/assets/fonts/Muli-Bold.woff");
+}
+
+@font-face {
+    font-family: "MuliExtraBold";
+    src: url("/assets/fonts/Muli-ExtraBold.woff");
+}
+
+@font-face {
+    font-family: "MuliExtraBoldItalic";
+    src: url("/assets/fonts/Muli-ExtraBoldItalic.woff");
+}
+
+@font-face {
+    font-family: "PoppinsMedium";
+    src: url("/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "PoppinsSemiBold";
+    src: url("/assets/fonts/Poppins-SemiBold.ttf");
+
+}
+
+
+
+
 html,
 *{
     margin: 0;
@@ -149,13 +183,24 @@ button {
     
 
 }
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    align-items: center;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 11px;
+}
 .social{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 .social__icon{
-    margin-left: 35px;
+    
 }
 p{
     line-height: 20px;
@@ -222,32 +267,42 @@ h4{
 
 .about{
     display: flex;
-    justify-content: space-around;
+   align-items: center;
     background-color: #128373;
     border:solid 1px;
 }
 
 .about__content{
-    margin:  101px;
+    margin-left: 255px;
     border:solid 1px;
-    
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 }
+    
+    
 .about__title{
-    width: 976px;
-    height: 47px;
+    
+    font-size: 30px;
     color: #ffffff;
     border:solid 1px;
+    
 }   
 
+.about__drink{
+    color: #cae941;
+    font-family: MuliExtraBoldItalic;
+}
+
 .about__inner{
-    margin: 101px;
+           margin-top: 101px;
     border:solid 1px;
     
 }
 .about__item{
     color: #ffffff;
     font-style:normal;
+    
 }
 
 .about_text--bolder{
@@ -255,8 +310,12 @@ h4{
 }
 .about__list{
     list-style: none;
-    height: 380px;
     border:solid 1px;
+    line-height: 2.05;
+    padding: 50px 0 100px 0;
+    
+    
+    
 }
 
 .about__btn-green{
@@ -326,50 +385,183 @@ h4{
 
 .story{
     display:flex;
-    width: 100vw;
+    border: solid 1px;
+    margin: 120px 0px 150px 0;
+    border:solid 1px;
 }
 .story__inner{
-    border:10px solid black;
+    border:1px solid black;
     width: 50%;
 }
 .story__title{
-    padding-top: 200px;
+    
     padding-left:300px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: start;
+    border:solid 1px;
 }
 .story__text{
-    padding-left: 300px;
-    width: 700px;
+    
+    padding: 50px 155px 50px 300px;
     text-align: start;
-    font-size: 20px;
+    font-size: 18px;
+    border:solid 1px;
+    text-align: left;
+    line-height: 1.94;
 }
+
+.story__icon{
+margin-left: 20px;
+}
+
+
 .story__btn-wrapper{
-    width: 302px;
+   
     height: 60px;
     border:2px solid black;
     padding-left: 300px;
 }
 .story__btn-green{
-    padding-left: 300px;
-    padding-top:40px;
+    
     background-color: #158775;
     border:1px solid;
     width: 302px;
     height: 60px;
-    padding-left: 300px;
+   color:white;
+   
     border-radius: 35px;
+}
+
+.story__img{
+    border:solid 1px;
 }
 
 .testimonials{
     height: 720px;
+    border:solid 1px;
+    background-color: #672f1b;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.testimonials__title{
+  font-family:Muli-ExtraBold;
+  font-size: 50px;
+
+}
+
+.testimonials__items{
+    display: flex;
+    justify-content: center;
+    margin:100px 0 70px 0;
+}
+
+.testimonials__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    padding-top: 60px;
+}
+
+.testimonials__inner{
+    border:solid 1px;
+}
+
+.testimonials__cite-text{
+    border:solid 1px;
+    width: 450px;
+    font-family: Muli-Regular;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    
+    
+}
+
+.testimonials__Love{
+    color: #f2612d;
+}
+    
+
+
+.testimonials__cite-autor{
+    border:solid 1px;
+    color:orange;
+    margin-top: 30px;
+    font-family: PoppinsSemiBold;
+
+}
+
+
+.testimonials__btn--yellow{
+    border:solid 1px;
+    width: 34px;
+    margin-left: 100px;
+
+}
+
+.testimonials__btn--yellowLeft{
+    border:solid 1px;
+
+}
+
+.testimonials__button{
+    border:solid 1px;
+    
 }
 
 .blog{
     display:flex;
+    
+}border:solid 1px;
+
+.blog__inner{
+    border:solid 1px;
 }
+
+.blog__title{
+    border:solid 1px;
+}
+
+.blog__text{
+    border:solid 1px;
+}
+
+.blog__img{
+    border:solid 1px;
+}
+
+.blog__text-title{
+    border:solid 1px;
+}
+
+.blog__sub-title--sup{
+    border:solid 1px;
+}
+
+.blog__sub-title{
+    border:solid 1px;
+}
+
+.blog__sub--title{
+    border:solid 1px;
+}
+
+.blog__link{
+    border:solid 1px;
+}
+
+
+
+
 .instagram__inner{
     display:flex;
+    border:solid 1px;
     
 }
 
@@ -393,6 +585,7 @@ h4{
     border:1px solid;
     
     
+    
 }
 
 .footer__holder{
@@ -401,6 +594,21 @@ h4{
     
     
 }
+
+.footer__features--payment{
+    border:solid 1px;
+
+}
+
+.footer__features{
+    border:solid 1px;
+}
+
+.footer__holder{
+    border:solid 1px;
+}
+
+
 
 @media (max-width: 1150px) {
     .header__navigation {
