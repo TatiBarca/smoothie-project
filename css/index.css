@@ -206,25 +206,28 @@ p{
     line-height: 20px;
     padding-top: 40px;
 }
-h2{
-    padding-top: 90px;
-}
+
 .smoothies{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 862px;
+    min-height: 860px;
     border:solid 1px;
 }
 
 .smoothies__tittle{
     font-size: 50px;
     line-height: 0.8;
+    margin-top: 65px;
 }
 
 .smoothies__description{
     text-align: center;
     line-height: 1.94;
+    max-width: 920px;
+    font-family: Muli-Regular;
+    font-size: 18px;
+    margin-bottom: 65px;
 }
 
 
@@ -234,21 +237,12 @@ h2{
 .smoothies__name{
     width: 25%;
     height: 180px;
-}
-.smoothies__inner{
-    text-align: center;
-    font-weight: normal;
-    font-family:Muli-Regular;
-    font-size: 18px;
-    max-width: 920px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items:center;
-    max-width: 920px;
-    border:solid 1px;
-    margin-bottom: 65px;
+    justify-content: center;
 }
+ 
 .smoothies__features{
     max-width: 960px;
     max-height: 380px;
@@ -257,7 +251,7 @@ h2{
     justify-content: space-between;
     border:solid 1px;
     width: 1010px;
-    height: 395px;
+    
     
 }
 
@@ -528,20 +522,31 @@ margin-left: 20px;
 }
 
 .blog{
-    display:flex;
     
-}border:solid 1px;
+    border:solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: MuliExtraBold;
+}
 
 .blog__inner{
     border:solid 1px;
+    display: flex;
 }
 
 .blog__title{
     border:solid 1px;
+    font-size: 50px;
+    margin: 100px 955px 0 0;
 }
 
 .blog__text{
     border:solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
 }
 
 .blog__img{
@@ -550,26 +555,45 @@ margin-left: 20px;
 
 .blog__text-title{
     border:solid 1px;
+    font-size: 25px;
 }
 
 .blog__sub-title--sup{
     border:solid 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    
 }
 
 .blog__sub-title{
     border:solid 1px;
+    line-height: 1.94;
+    text-align: left;
+    
+    
+    
 }
 
 .blog__sub--title{
     border:solid 1px;
+    width: 470px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-family: MuliBold;
+    
 }
 
 .blog__link{
     border:solid 1px;
 }
 
+.blog__btn--white{
+    font-family: MuliExtraBoldItalic;
+}
 
-
+.blog__img--orange{
+    margin-left: 5px;
+}
 
 .instagram__inner{
     display:flex;
@@ -587,24 +611,27 @@ margin-left: 20px;
 
 .footer__inner{
     display:flex;
-    align-items:flex-start;
-    
-    height: 372px;
+    justify-content: space-around;
 }
 
 .footer{
     background-color: #fab03e;
     border:1px solid;
+}
+
+.footer__title{
+    color: white;
+}
+
+.footer__holder{
+    border:solid 1px;
     
     
     
 }
 
-.footer__holder{
-    width: 1920px;
-    height: 60px;
-    
-    
+.footer__link{
+    color: #6d450c;
 }
 
 .footer__features--payment{
@@ -616,9 +643,18 @@ margin-left: 20px;
     border:solid 1px;
 }
 
-.footer__holder{
-    border:solid 1px;
+.footer__sub-title{
+    color: #6d450c;
 }
+
+.footer__form-input{
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+}
+
 
 
 
