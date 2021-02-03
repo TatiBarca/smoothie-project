@@ -122,7 +122,7 @@ button {
     border: 1px solid red;
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 30px; 
     
 }
 
@@ -283,7 +283,21 @@ h4{
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    position: relative;
 }
+
+.about__content::after{
+    content:"";
+    width: 462px;
+    height: 12px;
+    background-image: url(/assets/images/greenLine.png);
+    position: absolute;
+    background-size:cover;
+    top: 75px;
+    left: 69px;
+}
+    
+
     
     
 .about__title{
@@ -445,6 +459,10 @@ position: relative;
     border-radius: 35px;
 }
 
+
+.story__img {
+    position: relative;
+}
 .story__img::before{
     content: "";
     border:solid 1px;
@@ -456,7 +474,7 @@ position: relative;
     position: absolute;
     background-image: url(/assets/images/Stamp-sunny-text.png);
     z-index: 55;
-    right: 476px;
+    right: 186px;
     
 }
 
@@ -467,27 +485,28 @@ position: relative;
     display:flex;
     flex-direction: column;
     align-items:center;
-    position: relative;
+    
 }
 
-.testimonials::before{
+.testimonials__items::before{
     content:"";
     width: 764px;
     height: 150px;
     background-image: url(/assets/images/sarah-a-png.png);
-    top: 124px;
-    left: 425px;
+    top: -35px;
+    right: 125px;
     position: absolute;
+    z-index: -1;
 }
 
-.testimonials::after{
+.testimonials__items::after{
     content:"";
     width: 410px;
     height: 300px;
     background-image: url(/assets/images/Dots-img.png);
     position: absolute;
-    top: -74px;
-    right: 45px;
+    top: -384px;
+    right: -560px;
 
 }
 
@@ -501,7 +520,8 @@ position: relative;
 .testimonials__items{
     display: flex;
     justify-content: center;
-    margin:100px 0 70px 0;
+    margin:123px 0 70px 0;
+    position: relative;
     z-index: 3;
 }
 
@@ -515,6 +535,7 @@ position: relative;
 
 .testimonials__inner{
     border:solid 1px;
+    margin-top: 123px;
 }
 
 .testimonials__cite-text{
@@ -576,6 +597,7 @@ position: relative;
     border:solid 1px;
     display: flex;
     position: relative;
+    margin-bottom: 195px;
 
 }
 
@@ -720,13 +742,44 @@ position: relative;
 }
 
 
-
-
-@media (max-width: 1150px) {
+ /* @media(max-width:1170px){
     .header__navigation {
         display: none;
     }
+     .header__burgher-btn {
+        display: block;
+    }
+    .header__content {
+        padding-top:200px;
+    } 
+}  */
 
+@media (max-width: 768px) {
+    .header__navigation {
+        background-color:#0aa566;
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 55555555;
+        padding: 0;
+        margin: 0;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        padding:100px;
+    }
+    .menu__list{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .menu__item{
+        height: 40px;
+        margin-top: 30px;
+        margin-right: 0;
+    }
     .header__burgher-btn {
         display: block;
     }
@@ -734,4 +787,6 @@ position: relative;
         padding-top:200px;
     }
 }
+
+
 
