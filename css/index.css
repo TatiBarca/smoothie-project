@@ -753,7 +753,7 @@ position: relative;
     } 
 } 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header__navigation {
         display: flex;
         background-color:#0aa566;
@@ -769,7 +769,7 @@ position: relative;
         justify-content: flex-end;
         align-items: center;
         padding:100px;
-    }
+    } */
     .menu__list{
         display:flex;
         flex-direction: column;
@@ -788,10 +788,21 @@ position: relative;
     .header__content {
         padding-top:200px;
     }
+    .smoothies__tittle{
+        font-size: 37px;
+    }
+    .smoothies__description{
+        font-size: 30px;
+        margin:10px 37px 10px 37px;
+        padding: 0;
+    }
+    .smoothies__features{
+        display: flex;
+    }
     
 }
 @media (max-width: 460px) {
-    .header__navigation {
+    /* .header__navigation {
         display: flex;
         background-color:#0aa566;
         position: fixed;
@@ -806,7 +817,7 @@ position: relative;
         justify-content: flex-end;
         align-items: center;
         padding:100px;
-}
+} */
 .container__details{
     flex-direction: column;
     
@@ -819,5 +830,4 @@ position: relative;
     margin-left: 20px;
 }
 
-
-
+}
