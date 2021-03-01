@@ -8,92 +8,88 @@
     display:flex;
     flex-direction: column;
     align-items:center;
+    .testimonials__inner{
+        border:solid 1px;
+        margin-top: 123px;
+        .testimonials__title{
+            font-family:Muli-ExtraBold;
+            font-size: 50px;
+            .testimonials__Love{
+                color: #f2612d;
+            }
+        
+        }
+    }
+    .testimonials__items{
+        display: flex;
+        justify-content: center;
+        margin:123px 0 70px 0;
+        position: relative;
+        z-index: 3;
+    }
+    .testimonials__items::before{
+        content:"";
+        width: 764px;
+        height: 150px;
+        background-image: url(/assets/images/sarah-a-png.png);
+        top: -35px;
+        right: 125px;
+        position: absolute;
+        z-index: -1;
+    }
+    .testimonials__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+        padding-top: 60px;
+        .testimonials__cite-text{
+            border:solid 1px;
+            width: 450px;
+            font-family: Muli-Regular;
+            font-size: 18px;
+            font-weight: normal;
+            color: #ffffff;
+            font-weight: 600;
+            text-align: center;
+            line-height: 35px;
+        }
+        .testimonials__cite-autor{
+            border:solid 1px;
+            color:orange;
+            margin-top: 30px;
+            font-family: PoppinsSemiBold;
+        }
+    }
+    .testimonials__img{
+        position: relative;
+    }
+    .testimonials__img::after{
+        content:"";
+        width: 410px;
+        height: 300px;
+        background-image: url(../../assets/images/Dots-img.png);
+        position: absolute;
+        left: 165px;
+        bottom: 310px;
+    }
+    .testimonials__button{
+        border:solid 1px;
+        .testimonials__btn--yellowLeft{
+            border:solid 1px;
+        }
+        .testimonials__btn--yellow{
+            border:solid 1px;
+            width: 34px;
+            margin-left: 100px;
+        }
+    }
+    
+    
     
 }
 
-.testimonials__items::before{
-    content:"";
-    width: 764px;
-    height: 150px;
-    background-image: url(/assets/images/sarah-a-png.png);
-    top: -35px;
-    right: 125px;
-    position: absolute;
-    z-index: -1;
-}
-
-.testimonials__img::after{
-    content:"";
-    width: 410px;
-    height: 300px;
-    background-image: url(/assets/images/Dots-img.png);
-    position: absolute;
-    left: 650px;
-    bottom: 310px;
-
-}
 
 
-.testimonials__title{
-    font-family:Muli-ExtraBold;
-    font-size: 50px;
 
-}
 
-.testimonials__items{
-    display: flex;
-    justify-content: center;
-    margin:123px 0 70px 0;
-    position: relative;
-    z-index: 3;
-}
-
-.testimonials__text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px;
-    padding-top: 60px;
-}
-
-.testimonials__inner{
-    border:solid 1px;
-    margin-top: 123px;
-}
-
-.testimonials__cite-text{
-    border:solid 1px;
-    width: 450px;
-    font-family: Muli-Regular;
-    font-size: 18px;
-    font-weight: normal;
-    color: #ffffff;
-    font-weight: 600;
-    text-align: center;
-    line-height: 35px;
-}
-
-.testimonials__Love{
-    color: #f2612d;
-}
-    
-.testimonials__cite-autor{
-    border:solid 1px;
-    color:orange;
-    margin-top: 30px;
-    font-family: PoppinsSemiBold;
-}
-
-.testimonials__btn--yellow{
-    border:solid 1px;
-    width: 34px;
-    margin-left: 100px;
-}
-
-.testimonials__btn--yellowLeft{
-    border:solid 1px;
-}
-
-.testimonials__button{
-    border:solid 1px;
-}

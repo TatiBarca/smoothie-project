@@ -1,45 +1,43 @@
 // main: ../main.less
+.header{
 
-
-.header__img{
+&__img{
     background-image: url(../../assets/images/header-img.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-.header__top-inner {
+
+&__top-inner {
     padding-bottom: 70px;
     height: 100%;
     border:1px solid;
-    .header__burgher-btn {
-        display: none;
-        width: 50px;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 99999999;
-        border:solid 1px;
-    }
-    .header__burgher-btn-icon{
+}
+&__burgher-btn {
+    display: none;
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99999999;
+    border:solid 1px;
+}
+&-icon{
         width: 100%;
     }
-    .header__navigation{
+&__navigation{
         display: flex;
         justify-content: space-between;
         padding: 90px 0 110px;
         /* border: 1px solid; */
         }
-}
-.header__icon{
-    border: 1px solid red; 
-    color: red;
-}
-.header-content{
+&-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     border:solid 1px;
-    .header__btn-wrapper{
+}
+&__btn-wrapper{
         display: flex;
         justify-content: center;
         padding-top: -27px;

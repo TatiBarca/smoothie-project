@@ -1,23 +1,26 @@
 // main: ../main.less
 
 
-.blog{
-    border:solid 1px;
+.blog {
+    border: solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: MuliExtraBold;
-    .blog__title{
-        border:solid 1px;
+
+    &__title {
+        border: solid 1px;
         font-size: 50px;
         margin: 100px 955px 0 0;
     }
-    .blog__inner{
-        border:solid 1px;
+
+    &__inner {
+        border: solid 1px;
         display: flex;
         position: relative;
         margin-bottom: 195px;
-        .blog__inner::before{
+
+        &:before {
             content: "";
             display: inline-block;
             background-image: url(/assets/images/long-line-orange-png.png);
@@ -25,62 +28,54 @@
             z-index: -777;
             width: 650px;
             height: 10px;
-            top:60px;
+            top: 60px;
             left: 518px;
         }
-        .blog__text{
-            border:solid 1px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 60px;
-            .blog__text-title{
-                border:solid 1px;
-                font-size: 25px;
-                color: #f2612d;
-            }
-            .blog__sub-title{
-                border:solid 1px;
-                line-height: 1.94;
-                text-align: left;
-            }
-            .blog__sub-title--sup{
-                border:solid 1px;
-                font-size: 16px;
-                margin-top: 15px;
-            }
-            
-            .blog__sub--title{
-                border:solid 1px;
-                width: 470px;
-                margin-left: 80px;
-                font-size: 18px;
-                font-family: MuliBold;
-            }
-            .blog__btn--white{
-                font-family: MuliExtraBoldItalic;
-            }
-            
-            .blog__img--orange{
-                margin-left: 5px;
-            }
-            .blog__link{
-                border:solid 1px;
-            }
-            
-            
+    }
+
+    &__text {
+        border: solid 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+
+        &-title {
+            border: solid 1px;
+            font-size: 25px;
+            color: #f2612d;
         }
     }
+
+    &__sub-title {
+        border: solid 1px;
+        line-height: 1.94;
+        text-align: left;
+
+        &--sup {
+            border: solid 1px;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+    }
+
+    &__sub--title {
+        border: solid 1px;
+        width: 470px;
+        margin-left: 80px;
+        font-size: 18px;
+        font-family: MuliBold;
+    }
+
+    &__btn--white {
+        font-family: MuliExtraBoldItalic;
+    }
+
+    &__img--orange {
+        margin-left: 5px;
+    }
+
+    &__link {
+        border: solid 1px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
